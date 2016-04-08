@@ -13,7 +13,7 @@ $(document).ready(function(){
                 function(data) {
                     $('#lookup_box').html('<a id="lookup_id_object_id" class="related-lookup" onclick="return showRelatedObjectLookupPopup(this);"></a>');
                     $('#lookup_id_object_id').html('<img src="'+ static_url + 'admin/img/selector-search.gif"/> Lookup ' + type);
-                    $('#lookup_id_object_id').attr('href', admin_url + data.app_label +'/'+ data.model +'/?t=id');
+                    $('#lookup_id_object_id').attr('href', admin_url + data.app_label +'/'+ data.model +'/?_to_field=id&_popup=1');
                 }
             )
         }
